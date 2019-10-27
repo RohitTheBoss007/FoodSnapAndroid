@@ -363,7 +363,7 @@ public class MainActivity extends Activity {
         dialogBuilder.setNeutralButton("Contact Developer", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
 
-                String mailto = "mailto:dilip.ajm@gmail.com";
+                String mailto = "mailto:rohitpal210@gmail.com";
 
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
                 emailIntent.setData(Uri.parse(mailto));

@@ -15,6 +15,6 @@ I have used tensorflow by google to train this classifier and tflite to optimize
 ## Screenshots
 
 ![alt text](https://github.com/RohitTheBoss007/FoodSnapAndroid/blob/master/app/assets/1-IMG_5054.png)
-![alt text](https://github.com/RohitTheBoss007/FoodSnapAndroid/blob/master/app/assets/screenshot_help_dialog.png)
+![alt text](https://github.com/RohitTheBoss007/FoodSnapAndroid/blob/master/app/assets/abc.png)
 ![alt text](https://github.com/RohitTheBoss007/FoodSnapAndroid/blob/master/app/assets/3-IMG_5052.png)
 ![alt text](https://github.com/RohitTheBoss007/FoodSnapAndroid/blob/master/app/assets/4-IMG_5053.png)

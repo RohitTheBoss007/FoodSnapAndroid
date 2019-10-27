@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F2F7"
+    android:weightSum="100"
+    tools:context=".CameraActivity">
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_left"
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backPressed"/>
+
+        <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="Food Info"
+            android:textColor="@color/white" />
+
+        <ai.fooz.foodanalysis.customfont.ButtonBold
+            android:onClick="editPressed"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:text="Edit"
+            android:background="@drawable/button_bg_white"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_weight="50"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+
+    <!-- To display picture taken -->
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/imgPreview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/camera" />
+
+
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imgPreview"
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:scrollbars="horizontal"
+        />
+
+
+
+    <LinearLayout
+        android:layout_weight="50"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            android:textColor="@color/gray" />
+
+
+        <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/black"
+            android:id="@+id/itemCal"/>
+    </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbs"
+                android:textColor="@color/gray" />
+
+
+            <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 gms"
+                android:textColor="@color/black"
+                android:id="@+id/itemCarbs"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proteins"
+                android:textColor="@color/gray" />
+
+
+            <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 gms"
+                android:textColor="@color/black"
+                android:id="@+id/itemFats"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fats"
+                android:textColor="@color/gray" />
+
+
+            <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 gms"
+                android:textColor="@color/black"
+                android:id="@+id/itemProts"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

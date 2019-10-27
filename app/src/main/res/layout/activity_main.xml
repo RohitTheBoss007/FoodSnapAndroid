@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    android:id="@+id/header"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:includeFontPadding="false"
+        android:text="Calories Counter"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="22sp"/>
+
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_help_round_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="helpClicked"
+        android:id="@+id/helpBtn"/>
+
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:onClick="openCalendar"
+        android:layout_below="@+id/header"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+
+        <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+            android:id="@+id/activity_main_text_day_of_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:text="XX"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+
+        <ImageView
+            android:onClick="previousDay"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_left"/>
+
+
+        <ImageView
+            android:onClick="nextDay"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_right"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/activity_main_view_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_text_day_of_month"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_date_range_white_24dp"/>
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+        <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+            android:id="@+id/activity_main_text_day_of_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_main_view_separator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="XXXXXXX"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/calories"
+        android:layout_below="@+id/calendarView"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                        android:textSize="16sp"
+                        android:gravity="start"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/white"
+                        android:text="Calorie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/white"
+                        android:text="00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totalCal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:background="#e1e5e9"
+                android:layout_width="1px"
+                android:layout_height="24dp"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/white"
+                    android:text="Carbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                    android:textColor="@color/white"
+                    android:text="0 gms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalCarbs"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:background="#e1e5e9"
+                android:layout_width="1px"
+                android:layout_height="24dp"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/white"
+                    android:text="Fats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                    android:textColor="@color/white"
+                    android:text="0 gms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalFats"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:background="#e1e5e9"
+                android:layout_width="1px"
+                android:layout_height="24dp"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/white"
+                    android:text="Proteins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+                    android:textColor="@color/white"
+                    android:text="0 gms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalProts"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/calories"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_camera"/>
+
+
+
+</RelativeLayout>

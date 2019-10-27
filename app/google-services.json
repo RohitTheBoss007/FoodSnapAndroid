@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "285415224450",
+    "firebase_url": "https://foodsnap-ff72d.firebaseio.com",
+    "project_id": "foodsnap-ff72d",
+    "storage_bucket": "foodsnap-ff72d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285415224450:android:7573f5d011a36040",
+        "android_client_info": {
+          "package_name": "ai.fooz.foodanalysis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285415224450-p7fafkadnbsb1vqlujpkegv9fiua26bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwU0MCaPCr3-_RbKH3DaiToe1N2hWM8Vw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

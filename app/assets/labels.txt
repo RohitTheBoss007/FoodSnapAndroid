@@ -1,0 +1,65 @@
+apple
+banana
+bitter gourd
+bottle gourd
+bread
+brinjal
+cabbage
+caprese salad
+capsicum
+carrots
+cashews
+cauliflower
+ceviche
+cheese plate
+cheesecake
+chicken
+chicken quesadilla
+chicken wings
+chocolate cake
+chocolate mousse
+club sandwich
+corn maize
+creme brulee
+cucumber
+cup cakes
+daal baati
+daliya
+deviled eggs
+dhokla
+donuts
+dosa
+eggs
+fish and chips
+french fries
+french toast
+fried rice
+frozen yogurt
+garlic bread
+grilled cheese sandwich
+hamburger
+hot dog
+hot and sour soup
+ice cream
+idli
+jalebi
+kachori
+lobster roll sandwich
+macaroni and cheese
+nachos
+omelette
+onion rings
+pancakes
+pizza
+rice
+ridge gourd
+roti
+rusk
+samosa
+seaweed salad
+steak
+sushi
+takoyaki
+tea
+vada
+waffles

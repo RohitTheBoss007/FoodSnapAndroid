@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/apple" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <ai.fooz.foodanalysis.customfont.TextView_SemiBold
+               android:textStyle="bold"
+               android:textSize="16sp"
+               android:textColor="#000"
+               android:text="Apple bar with idli"
+               android:id="@+id/txt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:maxLines="1"
+               android:ellipsize="end"/>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:layout_marginStart="10dp"
+               android:gravity="bottom"
+               android:orientation="horizontal">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+                       <ai.fooz.foodanalysis.customfont.TextView_Regular
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:gravity="start"
+                           android:paddingBottom="5dp"
+                           android:paddingTop="5dp"
+                           android:text="Calories"
+                           android:textColor="#9f9f9f" />
+
+                       <ai.fooz.foodanalysis.customfont.TextView_Regular
+                           android:id="@+id/cals"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginEnd="5dp"
+                           android:layout_marginStart="5dp"
+                           android:text="xxx"
+                           android:textColor="#9f9f9f" />
+                   </LinearLayout>
+               </LinearLayout>
+
+
+               <View
+                   android:layout_width="1px"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="16dp"
+                   android:background="#e1e5e9" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+
+                   <ai.fooz.foodanalysis.customfont.TextView_Regular
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="5dp"
+                       android:paddingTop="5dp"
+                       android:text="Carbs"
+                       android:textColor="#9f9f9f" />
+
+                   <ai.fooz.foodanalysis.customfont.TextView_Regular
+                       android:id="@+id/carbs"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="xxx"
+                       android:textColor="#9f9f9f" />
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="1px"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="16dp"
+                   android:background="#e1e5e9" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+
+                   <ai.fooz.foodanalysis.customfont.TextView_Regular
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="5dp"
+                       android:paddingTop="5dp"
+                       android:text="Fats"
+                       android:textColor="#9f9f9f" />
+
+                   <ai.fooz.foodanalysis.customfont.TextView_Regular
+                       android:id="@+id/fats"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="xxx"
+                       android:textColor="#9f9f9f" />
+
+               </LinearLayout>
+
+
+               <View
+                   android:layout_width="1px"
+                   android:layout_height="24dp"
+                   android:layout_gravity="center"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="16dp"
+                   android:background="#e1e5e9" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                   <ai.fooz.foodanalysis.customfont.TextView_Regular
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="5dp"
+                       android:paddingTop="5dp"
+                       android:text="Proteins"
+                       android:textColor="#9f9f9f" />
+
+                   <ai.fooz.foodanalysis.customfont.TextView_Regular
+                       android:id="@+id/prots"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="xxx"
+                       android:textColor="#9f9f9f" />
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+       </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#e1e5e9" />
+</LinearLayout>

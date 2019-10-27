@@ -1,4 +1,4 @@
-# Food Snap
+# Food Snap 
 Food classification &amp; calories display
 
 ![alt text](https://github.com/RohitTheBoss007/FoodSnapAndroid/blob/master/demo-gif.gif)
@@ -7,7 +7,7 @@ You might have seen the app where you type the food item name and the app will s
 
 This app is a demo to show by just clicking a picture of the food item you will get to know the calories, carbs etc.
 
-This classifier is running on the phone so internet is not must and off-course its fast.
+This classifier is running on the phone so internet is not must and of-course its fast.
 
 I have used tensorflow by google to train this classifier and tflite to optimize model which can inference on mobile without internet.
 

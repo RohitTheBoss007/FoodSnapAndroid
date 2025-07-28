@@ -3,13 +3,14 @@ Food classification &amp; calories display
 
 ![alt text](https://github.com/RohitTheBoss007/FoodSnapAndroid/blob/master/demo-gif.gif)
 
-You might have seen the app where you type the food item name and the app will show you the micro-nutrients in it like Calories, Carbs, Fats, Proteins etc.
+Ever used an app where you type in the name of a food item to get its nutritional values like calories, carbohydrates, fats, and proteins?
 
-This app is a demo to show by just clicking a picture of the food item you will get to know the calories, carbs etc.
+This app takes it one step further — simply click a photo of the food, and the app will instantly display its estimated macro-nutrient breakdown.
 
-This classifier is running on the phone so internet is not must and of-course its fast.
+✅ No internet required – The food classifier runs entirely on-device, ensuring fast and private predictions.
+⚙️ Built with TensorFlow – Trained using TensorFlow by Google and optimized with TensorFlow Lite (TFLite) for smooth, efficient inference on mobile devices.
 
-I have used tensorflow by google to train this classifier and tflite to optimize model which can inference on mobile without internet.
+This is a demo app to showcase how AI and machine learning can simplify calorie tracking with just your phone’s camera.
 
 
 ## Screenshots
